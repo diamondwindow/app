@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+  <title>Mohamed Hamed</title>
+  <style>
+*{
+	    padding: 0;
+	    margin: 0;
+	}
+	header{
+	    height: 100px;
+	    width: 100%;
+	    background-image: linear-gradient(to right, red,rgb(247, 86, 86))
+	}
+	#logoBox{
+	    width: 30%;
+	    height: 100%;
+	    float: right;
+	    background-color: #fafafa;
+	}
+	#h1Header{
+	    float: left;
+	    line-height: 100px;
+	    padding: 0 15px;
+	}
+	#logo{
+	    height: 100%;
+	    border-radius: 50%;
+	    float: right;
+	}
+	header a{
+	    color:black;
+	}
+	nav{
+	    width: 70%;
+	    text-align: center;
+	}
+	
+
+	nav a{
+	   text-decoration: none;
+	   color:white;
+	   font-weight: bold;
+     font-size: 22px;
+	   display: inline-block;
+	}
+	nav li{
+	    display: inline-block;
+	    line-height: 100px;
+	    width: 33%;
+	    text-align: center;
+	}
+	nav a:hover{
+	    background-color: white;
+	    color:black;
+	    height: 100%;
+	    width: 100%;
+	}
+	main{
+	    width: 100%;
+	    height: 450px;
+	    background-color: rgb(255, 55, 55);
+	    border-top: 3px solid white;
+	    animation-name: changeBackground;
+	    animation-duration: 7s;
+	    animation-iteration-count: infinite;
+	
+
+	}
+	aside{
+	    width: 30%;
+	    height: 100%;
+	    background-color: #fafafa;
+	    text-align: center;
+	    float: left;
+	}
+	aside img{
+	    width: 90%;
+	}
+	#h1Aside{
+	   padding: 20px 0;
+	   border-bottom: 2px solid red;
+	}
+	#article{
+	    float: right;
+	    width: 70%;
+	    height: 450px;
+	    position: relative;
+	}
+	#box{
+	    padding: 20px;
+	    text-align: center;
+	    position: absolute;
+	    width: 400px;
+	    height: 180px;
+	    background-color:#fafafa;
+	    top:50%;
+	    left:50%;
+	    transform: translate(-50%, -50%);
+	}
+	#box h1{
+	    border-bottom: 3px solid red;
+	    padding: 15px 0;
+	}
+	#box p{
+	    font-family: 'Cairo', sans-serif;
+	    text-align: justify;
+	}
+	#contact-box{
+	    width: 100%;
+	    display: flex;
+	    justify-content: center;
+	    margin-top: 15px;
+	}
+	#contact-box img{
+	    width: 45px;
+	    border-bottom: 2px double rgb(231, 62, 62);
+	    padding-bottom: 10px;
+	}
+	#contact-box img:hover{
+	    width: 55px;
+	    border-bottom: 2px solid black;
+	}
+  #text1{
+    margin: 5px;
+    width: 60%;
+    height: 100%;
+    background-color: lemonchiffon;
+    border: 2px solid black;
+    float: right;
+  }
+  footer{
+    width: 100%;
+    height: 600px;
+    clear: both;
+    border: 2px solid black;
+    background-color: red;
+  }
+  #photo2{
+   margin: 10px;
+    width: 100%;
+    height: 290px;
+    
+  }
+  #photo3{
+    margin: 10px;
+    width: 100%;
+      height: 290px;
+   
+  }
+	@keyframes changeBackground{
+	    0%{
+	        background-color: rgb(149, 216, 243);
+	    }
+	 
+	    50%{
+	        background-color: rgb(138, 140, 245);;
+	    }
+	    100%{
+	        background-color: rgb(51, 11, 63);
+	    }
+	}
+	#print{
+	    display: none;
+	}
+	
+
+	@media only screen and (min-width:940px) and (max-width:1070px){
+	    #logoBox{
+	        width: 35%;
+	    }
+	    #article{
+	        width: 65%;
+	    }
+	    aside{
+	        width: 35%;
+	    }
+	}
+	@media only screen and (max-width:940px){
+	    #logoBox{
+	        width: 40%;
+	    }  
+	}
+	@media only screen and (max-width:801px){
+	    header, main{
+	        height: auto;
+	    }
+	    #logoBox{
+	        width: 100%;
+	        text-align: center;
+	    }
+	    #h1Header,#logo{
+	        float: none;
+	    }
+	    span a{
+	        text-decoration: none;
+	    }
+	    nav{
+	        width: 100%;
+	    }
+	    aside{
+	        width: 100%;
+	    }
+	    #article{
+	        height: 230px;
+	        width:100%;
+	        background-color: #fafafa;
+	    }
+	}
+	@media only screen and (max-width:500px){
+	    nav li{
+	        display: block;
+	        width:100%;
+	    }
+	}
+	@media only screen and (orientation:landscape) and (max-width:500px){
+	    #logoBox{
+	        background-color: aqua;
+	    }
+	}
+	@media print{
+	    nav{
+	        display: none;
+	    }
+	    #print{
+	        display: block;
+	    }
+	}
+
+  </style>
+  
+</head>
+
+<body>
+<header>
+  <span id="logoBox">
+    <a target="_blank" href="#"><img src="a.jpg" id="logo"/></a>
+    <a href="#"><h4 id="h1Header">Abdul-Rahman Mohamed</h4></a>
+
+  </span>
+
+<nav>
+<ul>
+<li><a href="#">الصفحة الرئيسية</a></li>
+<li><a href="#">الفيديوهات</a></li>
+<li><a href="#">القوائم التشغيل</a></li>
+</ul>
+
+</nav>
+</header>
+<main>
+  <aside>
+    <a href="#"><img src="c2.jpg" alt=""></a>
+    <h1 id="h1Aside">كلية الطب - جامعة القاهرة</h1>
+    <div id="contact-box">
+      <a href=""> <img src="facebook.png" alt=""></a>
+      <a href=""> <img src="message.png" alt=""></a>
+      <a href=""> <img src="twitter.png" alt=""></a>
+      <a target="#"> <img src="youtupe.png" alt=""></a>
+
+    </div>
+  </aside>
+
+  <article id="article">
+    <div id="box">
+      <h1>طالب بكلية الطب - القصر العيني</h1>
+      <div style="margin-top:42px !important;">
+        <div id="text1">
+        <p> عبد الرحمن محمد - طالب بالفرقة الثانية - طب القصر العيني -القاهرة 
+          
+                </p>
+                <h1 id="print">Print</h1> 
+              </div>
+              <div id="photo1">
+<img src="d1.JPG">
+              </div>  
+     </div>
+      <h1 id="print">Print</h1>
+    </div>
+  </article>
+</main>
+<footer>
+
+  <div id="photo2">
+     
+  <img src="1.jpg" style="width: 33%;height: 280px;object-fit: cover;">
+ 
+
+
+ <img src="2.jpg" style="width: 33%;height: 280px;object-fit: cover;"> 
+
+
+ <img src="3.jpg" style="width: 33%;height: 280px;object-fit: cover;">
+
+</div>
+<div id="photo3">
+  <img src="4.jpg" style="width: 33%;height: 280px;object-fit: cover;">
+ 
+
+
+  <img src="5.jpeg" style="width: 33%;height: 280px;object-fit: cover;"> 
+ 
+ 
+  <img src="6.jpg" style="width: 33%;height: 280px;object-fit: cover;">
+</div>
+</footer>
+</body>
+</html>
